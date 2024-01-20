@@ -1,0 +1,52 @@
+.filtro-pokemon {
+  margin: 10px 5px 10px 5px;
+}
+
+.card-pokemon {
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+  width: 21em;
+  padding: 10px;
+}
+
+.lista-pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInAnimation {
+  animation: fadeIn 0.5s ease-out; /* Ajuste a duração e a função de temporização conforme necessário */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Estilo quando o input está focado */
+input:focus {
+  outline: none;
+  border-color: #007bff; /* Cor pode ser ajustada conforme necessário */
+}
+
+/* Estilo quando o input tem um valor não vazio */
+input:not(:placeholder-shown) {
+  border-color: #28a745; /* Cor pode ser ajustada conforme necessário */
+}

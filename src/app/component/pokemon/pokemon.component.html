@@ -1,0 +1,25 @@
+<div class="filtro-pokemon">
+  <input
+    type="text"
+    [(ngModel)]="termoFiltroPokemon"
+    placeholder="Digite o nome do Pokémon"
+  />
+</div>
+
+<div class="lista-pokemon" [ngClass]="{ fadeInAnimation: termoFiltroPokemon }">
+  <div
+    class="card-pokemon"
+    *ngFor="
+      let pokemon of listaPokemon | filtroPokemon : termoFiltroPokemon;
+      let i = index
+    "
+  >
+    <img src="{{ pokemon.sprites.front_default }}" alt="" width="200px" />
+    <div style="display: flex; justify-content: space-between">
+      <span>{{
+        pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
+      }}</span>
+      <span>#{{ pokemon.id }}</span>
+    </div>
+  </div>
+</div>

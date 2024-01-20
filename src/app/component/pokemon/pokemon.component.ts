@@ -26,8 +26,4 @@ export class PokemonComponent {
       });
     }
   }
-
-  verLista() {
-    console.log(this.listaPokemon);
-  }
 }

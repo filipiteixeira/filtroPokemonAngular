@@ -22,4 +22,11 @@
       <span>#{{ pokemon.id }}</span>
     </div>
   </div>
+  <!-- Mensagem quando nenhum item é encontrado -->
+  <div
+    class="pokemon-n-encontrado"
+    *ngIf="(listaPokemon | filtroPokemon : termoFiltroPokemon).length === 0"
+  >
+    <p>Nenhum Pokémon encontrado.</p>
+  </div>
 </div>

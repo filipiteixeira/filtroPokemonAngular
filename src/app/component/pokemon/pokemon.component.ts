@@ -18,7 +18,7 @@ export class PokemonComponent {
   }
 
   async listaCompletaPokemon() {
-    const qtdPokemons = 151;
+    const qtdPokemons = 152;
 
     for (let i = 1; i < qtdPokemons; i++) {
       await this.pokemonService.getPokemon(i).subscribe((data) => {

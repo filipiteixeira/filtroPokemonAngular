@@ -2,6 +2,25 @@
   margin: 10px 5px 10px 5px;
 }
 
+.filtro-pokemon input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.filtro-pokemon input:focus {
+  outline: none;
+  border-color: var(--input-focus-color);
+}
+
+.filtro-pokemon input:not(:placeholder-shown) {
+  border-color: var(--input-filled-color);
+}
+
 .card-pokemon {
   background-color: white;
   text-align: center;
@@ -27,26 +46,5 @@
 }
 
 .fadeInAnimation {
-  animation: fadeIn 0.5s ease-out; /* Ajuste a duração e a função de temporização conforme necessário */
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease-in-out;
-}
-
-/* Estilo quando o input está focado */
-input:focus {
-  outline: none;
-  border-color: #007bff; /* Cor pode ser ajustada conforme necessário */
-}
-
-/* Estilo quando o input tem um valor não vazio */
-input:not(:placeholder-shown) {
-  border-color: #28a745; /* Cor pode ser ajustada conforme necessário */
+  animation: fadeIn 0.5s ease-out;
 }

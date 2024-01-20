@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --input-border-color: #ccc;
+  --input-focus-color: #007bff;
+  --input-filled-color: #28a745;
+}
 body {
   background-color: #ededed;
 }
